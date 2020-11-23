@@ -8,6 +8,20 @@ jobs:
   triage-issue:
     runs-on: ubuntu-latest
     steps:
-    - name: Dummy step
-      run: |
-        echo $GITHUB_ACTOR, $GITHUB_REPOSITORY, $GITHUB_WORKSPACE, $GITHUB_EVENT_NAME
+    - name: Extract issue id
+      id: issue
+      run: echo "::set-output name=id::$(jq -r '.issue.id' < "$GITHUB_EVENT_PATH")"
+
+    - name: Print issue id
+      run: echo ${{ steps.issue.outputs.id }}
+    # - name: Create card
+    # - uses: actions/checkout@v2
+    #   - uses: actions/github-script@v3
+    #     with:
+    #       github-token: ${{secrets.GITHUB_TOKEN}}
+    #       script: |
+    #         github.projects.createCard({
+    #           column_id: 10507989,
+    #           content_id: ,
+    #           content_type: 'Issue'
+    #         })
