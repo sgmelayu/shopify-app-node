@@ -1,0 +1,42 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@shopify/polaris > lodash':
+        patched: '2022-03-25T17:42:08.456Z'
+    - '@shopify/app-cli-node-generator-helper > @babel/traverse > lodash':
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > @babel/core > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > babel-plugin-transform-define > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - '@shopify/app-cli-node-generator-helper > @babel/traverse > @babel/generator > lodash':
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > @babel/preset-env > @babel/types > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > styled-jsx > @babel/types > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - '@shopify/app-cli-node-generator-helper > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > @babel/core > @babel/template > @babel/types > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - '@shopify/app-cli-node-generator-helper > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-regex > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - '@babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/types > lodash':
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - '@babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/types > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
+    - '@babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2022-03-25T17:42:08.456Z'
+    - next > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-03-25T17:42:08.456Z'
